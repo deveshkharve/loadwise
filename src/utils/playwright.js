@@ -3,7 +3,7 @@ const fs = require("fs");
 const logger = require("./logger");
 // Configuration
 const DEFAULT_TIMEOUT = 30000;
-const HEADLESS = true;
+const HEADLESS = false;
 
 /**
  * Creates and returns a new browser instance

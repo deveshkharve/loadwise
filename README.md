@@ -26,7 +26,7 @@ Frontend
 Navigate to the frontend folder and install dependencies:
 
 ```bash
-cd app-frontend
+cd frontend
 npm install
 ```
 
@@ -76,7 +76,7 @@ Start Frontend Server
 In a new terminal:
 
 ```bash
-cd app-frontend
+cd frontend
 npm start
 ```
 
