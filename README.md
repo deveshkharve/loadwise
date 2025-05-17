@@ -117,3 +117,9 @@ npm start
 
 - Currently only supports TriumphPay.
 - Expanding to support other providers would require additional automation or agent-based approaches (e.g., headless browser + workflow agent), but this could increase cost.
+
+3. Scalability
+
+- For large PDF files, we can process pages in small batches and if can break the loop once we find the load number
+- To Scale this project, we can introduce queues between resource heavy (time/compute) operations, e.g. we can make the load number and details extraction services as a part of distributed system where the process is executed asynchronously using some message broker and the UI can be extended to use web-sockets or long-polling.
+- Dependency on REST APIs for communication, while in demo app the system can manage longer running requests, this becomes a bottleneck in heavy load systems and we might need to consider alternatives like web-sockets.
