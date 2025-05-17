@@ -20,6 +20,7 @@ The load number may appear under different field labels. Extract it using the mo
 	•	It might also appear as “PO” or “PO #”, but this is less preferred
 
 Avoid using values from fields like “BOL Number” or “Bill of Lading” – they are not load numbers.
+Avoid using values of irrelevant fields [not mentioned above], if valid data points are not found, return with null.
 
 ⸻
 
@@ -38,7 +39,7 @@ Response Format (JSON Only):
   "confidence": "high" | "low"
 }
 
-If no load number is found, return:
+If no load number is found or document is not valid freight shipping invoice or paperwork, return:
 
 {
   "load_number": null,
@@ -78,7 +79,10 @@ const analyzeImage = async (images) => {
   });
 
   const userMessageContent = [
-    { type: "input_text", text: "extract the load number from the image" },
+    {
+      type: "input_text",
+      text: "check if the image is a valid freight shipping invoice or paperwork and extract the load number from the image",
+    },
     ...imagesRequests,
   ];
 

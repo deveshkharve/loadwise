@@ -115,6 +115,7 @@ npm start
 
 2. Scraping Limitations
 
+- Extraction of load number needs to be enhanced by adding a list of valid identifiers.
 - Currently only supports TriumphPay.
 - Expanding to support other providers would require additional automation or agent-based approaches (e.g., headless browser + workflow agent), but this could increase cost.
 
