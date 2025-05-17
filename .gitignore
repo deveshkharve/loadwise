@@ -1,0 +1,21 @@
+node_modules
+.env
+.env.local
+
+# IDE
+.idea
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Logs
+logs/
+
+# Storage
+storage/
+test/
+tests-examples/
+auth.json

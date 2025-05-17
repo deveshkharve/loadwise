@@ -1,0 +1,37 @@
+{
+  "name": "lighthouz_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "axios": "^1.9.0",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.1",
+    "multer": "^1.4.5-lts.2",
+    "openai": "^4.100.0",
+    "path": "^0.12.7",
+    "pdf-to-img": "^4.4.0",
+    "twilio": "^5.6.1",
+    "winston": "^3.17.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.18",
+    "eslint": "^8.34.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
